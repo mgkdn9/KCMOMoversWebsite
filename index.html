@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KCMO Movers</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google CDN for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CDN for jQuery plugin with scrollTo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ee300151be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Anton Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <!-- PT Sans Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a id="navbar__logo"
+          ><img
+            class="logo_img"
+            src="images/logo.png"
+            alt="logo"
+          />&nbsp;KCMO Movers</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a id="link_AboutUs" class="navbar__links">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services_wrapper" class="navbar__links scroll">Our Services</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Contact Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Reviews</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/KCMOMoversWebsite/sandbox.html" class="navbar__links">Social Media/BS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Us -->
+    <div class="widescreen_container">
+      <div class="aboutUs_wrapper">
+        <div class="aboutUs_pic"></div>
+        <div class="aboutUs_words">
+          <h1>Get to Know KCMO Movers</h1>
+          <h4><i>&nbsp;&nbsp;Our Story</i></h4>
+          <br />
+          <p>
+            Hi, my name is Mike Kohlberg. I am the founder of KCMO Movers, and,
+            believe it or not, I thoroughly enjoy moving people. After training
+            for 7 months at the biggest branch of the biggest moving company in
+            the US and completing an entrepreneurism internship, we broke ground
+            in December 2014. We started moving under a different name and in a
+            different city, but the goal was always the same: to provide quality
+            moving services at an unbeatable price. This was possible given the
+            lack of overhead that I knew we would have compared to some of the
+            other providers. Years later, our level of integrity and precision
+            has not changed. We enjoy raving reviews from residents and
+            businesses of Kansas City, and we look forward to helping you take
+            that next step in getting where you want to go!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile_container">
+      <h1>Get to Know KCMO Movers</h1>
+      <div class="mobile_aboutUs_pic_container">
+        <img src="images/MMovers.PNG" alt="Movers" class="mobile_aboutUs_pic"></img>
+      </div>
+      <h4><i>&nbsp;&nbsp;&nbsp;&nbsp;Our Story</i></h4>
+      <br />
+      <p>
+        Hi, my name is Mike Kohlberg. I am the founder of KCMO Movers, and,
+        believe it or not, I thoroughly enjoy moving people. After training for
+        7 months at the biggest branch of the biggest moving company in the US
+        and completing an entrepreneurism internship, we broke ground in
+        December 2014. We started moving under a different name and in a
+        different city, but the goal was always the same: to provide quality
+        moving services at an unbeatable price. This was possible given the lack
+        of overhead that I knew we would have compared to some of the other
+        providers. Years later, our level of integrity and precision has not
+        changed. We enjoy raving reviews from residents and businesses of Kansas
+        City, and we look forward to helping you take that next step in getting
+        where you want to go!
+      </p>
+    </div>
+
+    <!-- Our Sevices -->
+    <div id="services_wrapper">
+      <div class="goto_texts">
+        <h1>Our Services</h1>
+      </div>
+      <div class="services_wrapper_4group">
+        <div class="services_wrapper_2groups">
+          <div class="services_card" id="pic_moving">
+            <h2>&nbsp;Moving</h2>
+            <h4>&nbsp;As long as it's heavy</h4>
+          </div>
+          <div class="services_card" id="pic_packing">
+            <h2>&nbsp;Packing</h2>
+            <h4>&nbsp;Your most obscure items</h4>
+          </div>
+        </div>
+        <div class="services_wrapper_2groups">
+          <div class="services_card" id="pic_driving">
+            <h2>&nbsp;Driving</h2>
+            <h4>&nbsp;Coast to coast</h4>
+          </div>
+          <div class="services_card" id="pic_cleaning">
+            <h2>&nbsp;Cleaning</h2>
+            <h4>&nbsp;All the pet hair</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Contact Us -->
+    <div id="send_message_container">
+      <form action="/KCMOMoversWebsite/send_email.php" method="POST">
+        <h1>WE WANT TO HEAR FROM YOU</h1>
+        <div class="contact_row_thirds">
+          <input type="text"  name="name"   placeholder="Full name*"    required  class="thirds"/>
+          <input type="email" name="email"  placeholder="Email*"        required  class="thirds"/>
+          <input type="tel"   name="number" placeholder="Phone number*" required  class="thirds"/>
+        </div>
+        <div class="contact_row_halves">
+          <input type="text" name="address" placeholder="Street address"  class="halves"/>
+          <input type="text" name="company" placeholder="Company"         class="halves"/>
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <br>
+          <textarea name="message" id="message" rows="4" placeholder="Type your message here..."></textarea>
+        </div>
+        <div class="button_container">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/">How it works</a>
+            <a href="/">Testimonials</a>
+            <a href="/">Careers</a>
+            <a href="/">Investments</a>
+            <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact Support</a>
+            <a href="/">Live Chat</a>
+            <a href="/">Destinations</a>
+            <a href="/">Sponsorships</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Public Support</h2>
+            <a href="/">Videos</a>
+            <a href="/">Ambassadors</a>
+            <a href="/">Auctions</a>
+            <a href="/">Agencies</a>
+            <a href="/">Influencers</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>About Us 2</h2>
+            <a href="/">How it works</a>
+            <a href="/">Testimonials</a>
+            <a href="/">Careers</a>
+            <a href="/">Investments</a>
+            <a href="/">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <!-- Social Media -->
+      <div class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+          </div>
+          <p class="website__rights">NEXT 2020. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              href="https://www.facebook.com"
+              class="social__icon--link"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="social__icon--link"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              class="social__icon--link"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              class="social__icon--link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              class="social__icon--link"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
